@@ -1,0 +1,46 @@
+.btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  background-color: $btn-color;
+  border-radius: 50%;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background-color: $btn-color__hover;
+    transition: all 0.3s;
+  }
+}
+.line {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: $color-light;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 18px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 2px;
+  }
+
+  &::before {
+    top: 6px;
+  }
+  &::after {
+    bottom: 6px;
+  }
+}
