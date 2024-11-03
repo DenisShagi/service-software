@@ -1,5 +1,7 @@
 .read-block {
     padding: 0 16px 0 24px;
+    font-size: 14px;
+    line-height: 18px;
 }
 
 .btn-arrow {
@@ -34,6 +36,12 @@
 .read-text__tablet {
     display: none;
 }
+.read-text__desktop {
+    display: none;
+}
+.read-text__desktop--p {
+    display: none;
+}
 @media (width >= 570px) {
     .read-block-wrapper {
         display: flex;
@@ -42,7 +50,7 @@
         align-items: flex-start;
         column-gap: 48px;
     }
-    .read-text {
+    .read-block {
         max-width: 320px;
     }
     .read-img {
@@ -54,6 +62,22 @@
         width: 360px;
     }
     .read-text__tablet {
-display: block;
+display: inline-block;
+    }
+}
+@media (width >= 1120px) {
+    .read-block {
+        max-width: 490px;
+    }
+    .read-text__desktop {
+        display: inline-block;
+    }
+    .read-text__desktop--p {
+        display: inline-block;
+        margin-top: 0;
+    }
+    .read-img__service {
+        height: 308px;
+        width: 531px;
     }
 }

@@ -74,3 +74,8 @@ align-items: center;
         }
         }
 }
+@media (width >= 1120px) {
+    .header {
+        display: none;
+    }
+}
