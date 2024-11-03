@@ -39,7 +39,7 @@
 .header-tablet-links {
   display: none;
 }
-@media (width >= 570px) {
+@media (width > 570px) {
   .header-logo {
     column-gap: 40px;
     &__link {
@@ -73,7 +73,7 @@
     }
   }
 }
-@media (width >= 1120px) {
+@media (width > 1120px) {
   .header {
     display: none;
   }

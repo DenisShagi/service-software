@@ -1,11 +1,11 @@
 @font-face {
   font-family: "TTLakes-Reg";
-  src: url("../../../fonts/TTLakes-Regular.woff") format("woff");
+  src: url("/src/stylesheet/fonts/TTLakes-Regular.woff") format("woff");
   font-weight: 400;
 }
 @font-face {
   font-family: "TTLakes-Bold";
-  src: url("/fonts/TTLakes-Bold.woff") format("woff");
+  src: url("./src/stylesheet/fonts/TTLakes-Bold.woff") format("woff");
   font-weight: 700;
 }
 body {
@@ -21,7 +21,7 @@ h2 {
   margin-top: 0;
 }
 
-@media (width >= 1120px) {
+@media (width > 1120px) {
   h2 {
     padding-top: 42px;
   }
@@ -236,7 +236,7 @@ template {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
-@media (width >= 570px) {
+@media (width > 570px) {
   .wrapper {
     margin: 0 auto;
     max-width: 100%;
@@ -244,7 +244,7 @@ template {
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   }
 }
-@media (width >= 1120px) {
+@media (width > 1120px) {
   .wrapper {
     padding-top: 0;
     max-width: 1120px;
@@ -341,7 +341,7 @@ template {
   display: none;
 }
 
-@media (width >= 570px) {
+@media (width > 570px) {
   .header-logo {
     -moz-column-gap: 40px;
          column-gap: 40px;
@@ -377,7 +377,7 @@ template {
     top: 6px;
   }
 }
-@media (width >= 1120px) {
+@media (width > 1120px) {
   .header {
     display: none;
   }
@@ -441,7 +441,7 @@ template {
   justify-content: space-between;
 }
 
-@media (width >= 1120px) {
+@media (width > 1120px) {
   .service-list {
     display: flex;
     flex-wrap: wrap;
@@ -535,7 +535,7 @@ template {
   display: none;
 }
 
-@media (width >= 570px) {
+@media (width > 570px) {
   .read-block-wrapper {
     display: flex;
     flex-direction: row;
@@ -558,7 +558,7 @@ template {
     display: inline-block;
   }
 }
-@media (width >= 1120px) {
+@media (width > 1120px) {
   .read-block {
     max-width: 490px;
   }
