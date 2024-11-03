@@ -1,3 +1,31 @@
+@font-face {
+  font-family: "TTLakes-Reg";
+  src: url("../fonts/TTLakes-Regular.woff") format("woff"), url("../fonts/TTLakes-Regular.woff") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "TTLakes-Bold";
+  src: url("../fonts/TTLakes-Bold.woff") format("woff"), url("../fonts/TTLakes-Bold.woff") format("truetype");
+  font-weight: 700;
+}
+body {
+  font-family: "TTLakes-Reg";
+}
+
+h2 {
+  font-family: "TTlakes-Bold";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  padding-top: 24px;
+  margin-top: 0;
+}
+
+@media (width >= 1120px) {
+  h2 {
+    padding-top: 42px;
+  }
+}
 /* Document
    ========================================================================== */
 html {
@@ -201,34 +229,6 @@ template {
   display: none;
 }
 
-@font-face {
-  font-family: "TTLakes-Reg";
-  src: url("../fonts/TTLakes-Regular.woff");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "TTLakes-Bold";
-  src: url("../fonts/TTLakes-Bold.woff");
-  font-weight: 700;
-}
-body {
-  font-family: "TTLakes-Reg";
-}
-
-h2 {
-  font-family: "TTlakes-Bold";
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 40px;
-  padding-top: 24px;
-  margin-top: 0;
-}
-
-@media (width >= 1120px) {
-  h2 {
-    padding-top: 42px;
-  }
-}
 .wrapper {
   margin: 0 auto;
   max-width: 100%;
