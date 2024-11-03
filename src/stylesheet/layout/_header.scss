@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    align-items: center;
+
+}
+.header-links {
+    display: flex;
+    column-gap: 16px;
+}
+.header-logo {
+
+    &__link {
+        margin: 0 40px 0 20px;
+        position: relative;
+        &::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            background-color: $color-line;
+            width: 2px;
+            height: 32px;
+            right: -18px;
+            top: -24px;
+        }
+    }
+}
