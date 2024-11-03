@@ -3,6 +3,7 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  box-sizing: border-box;
 }
 
 /* Sections
@@ -35,6 +36,7 @@ pre {
      ========================================================================== */
 a {
   background-color: transparent; /* 1 */
+  cursor: pointer;
 }
 
 abbr[title] {

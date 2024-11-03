@@ -1,0 +1,50 @@
+.article {
+    background-color: $bg-color;
+}
+
+.service-navigation {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding-left: 24px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.service-title {
+  position: relative;
+  padding-left: 24px;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 40px;
+    background-color: #76e7d3;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 4px;
+  }
+}
+.service-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-font;
+  & li {
+    cursor: pointer;
+    text-wrap: nowrap;
+    padding: 8px 10px 8px 16px;
+    border: 2px solid transparent;
+    &:hover {
+      border: 2px solid $color-spec;
+      border-radius: 6px;
+      background: $color-light;
+    }
+  }
+}
