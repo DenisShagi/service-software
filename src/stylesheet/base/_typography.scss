@@ -12,7 +12,7 @@
 body {
   font-family: "TTLakes-Reg";
 }
-h2 {
+.service-title {
   font-family: "TTlakes-Bold";
   font-weight: 700;
   font-size: 28px;
@@ -21,7 +21,11 @@ h2 {
   margin-top: 0;
 }
 @media (width > 1120px) {
-  h2 {
+  .service-title {
     padding-top: 42px;
   }
+}
+
+.hidden {
+  display: none;
 }
