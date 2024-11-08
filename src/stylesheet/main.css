@@ -311,6 +311,7 @@ template {
   position: absolute;
   background-color: rgb(217, 255, 245);
   width: 100%;
+  left: 0;
   height: 2px;
   bottom: 0;
 }
