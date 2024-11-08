@@ -490,8 +490,16 @@ template {
   }
 }
 .read-block {
+  display: flex;
+  flex-direction: column;
   padding: 0 16px 0 24px;
   font-size: 14px;
+}
+
+.read-block-content {
+  max-height: 100px;
+  overflow: hidden;
+  margin-bottom: 16px;
   line-height: 18px;
 }
 
@@ -524,10 +532,6 @@ template {
   flex-direction: column;
 }
 
-.read-text {
-  margin-top: 24px;
-}
-
 .read-text__tablet {
   display: none;
 }
@@ -549,6 +553,11 @@ template {
     -moz-column-gap: 48px;
          column-gap: 48px;
   }
+  .read-block-content {
+    max-height: 150px;
+    overflow: hidden;
+    line-height: 20px;
+  }
   .read-block {
     max-width: 320px;
   }
@@ -569,6 +578,11 @@ template {
   }
   .read-text__desktop {
     display: inline-block;
+  }
+  .read-block-content {
+    max-height: 490px;
+    overflow: hidden;
+    line-height: 20px;
   }
   .read-text__desktop--p {
     display: inline-block;
